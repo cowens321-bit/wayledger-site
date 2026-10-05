@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Milemark Support</title>
+<meta name="description" content="Help for Milemark, the private automatic mileage tracker for iPhone. Everything stays on your iPhone.">
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <img src="icon.png" alt="">
+    <a class="brand" href="./">Milemark</a>
+    <nav><a href="./" aria-current="page">Support</a><a href="privacy.html">Privacy</a></nav>
+  </header>
+
+  <h1>Milemark Support</h1>
+  <p class="lede">Automatic mileage tracking for iPhone that keeps every drive on your phone — no account, no servers.</p>
+
+  <div class="card contact">
+    <h2>Contact</h2>
+    <p>Email <a href="mailto:cowens321@icloud.com?subject=Milemark%20support">cowens321@icloud.com</a>. Include your iPhone model, iOS version and what happened. Please don’t send your trip history — it isn’t needed.</p>
+  </div>
+
+  <div class="card">
+    <h2>Recording drives</h2>
+    <details>
+      <summary>A drive wasn’t recorded</summary>
+      <p>Open <strong>Settings › Tracking</strong> in Milemark. The Tracking check at the top says whether your next drive will be recorded and has a Fix button for anything that’s off. The most common causes:</p>
+      <ol>
+        <li>Location access isn’t set to <strong>Always</strong>, or Precise Location is off.</li>
+        <li>Milemark was swiped away in the app switcher. iOS won’t wake a force-quit app for drives until you open it again.</li>
+        <li>Tracking is paused, or Location Services is off for the whole iPhone.</li>
+      </ol>
+      <p>If Milemark noticed you moved but didn’t record a drive, the Trips screen shows a <strong>Possible missed drive</strong> card. Tap <strong>Add drive</strong> to log it, or add any trip with <strong>+ › Add trip manually</strong>.</p>
+    </details>
+    <details>
+      <summary>How do I set location to “Always”?</summary>
+      <ol>
+        <li>Open the <strong>Settings</strong> app and scroll down to <strong>Milemark</strong> (or go to Settings › Apps › Milemark).</li>
+        <li>Tap <strong>Location</strong>.</li>
+        <li>Choose <strong>Always</strong> and turn on <strong>Precise Location</strong>.</li>
+      </ol>
+      <p>If you don’t see a Location row, open Milemark and tap <strong>Allow</strong> in the red banner first — iOS only lists permissions an app has asked for.</p>
+    </details>
+    <details>
+      <summary>Does Milemark drain my battery?</summary>
+      <p>While you’re parked, Milemark uses iOS’s low-power location monitoring. GPS runs only while you’re likely driving and stops when the drive ends.</p>
+    </details>
+    <details>
+      <summary>Why is the distance different from my map app?</summary>
+      <p>Milemark measures the route you actually drove, filtering out GPS noise. If a section had no signal (a tunnel or parking garage), the drive shows a signal gap; you choose whether to include the estimated distance for it. You can also set any drive’s distance yourself on its detail screen.</p>
+    </details>
+  </div>
+
+  <div class="card">
+    <h2>Work and Personal</h2>
+    <details>
+      <summary>Classifying drives</summary>
+      <p>Drives that still need a decision appear on the Trips screen. Swipe right for Work, left for Personal — or tap Work or Personal in the notification after a drive. Classified drives move to <strong>Trips › Logged drives</strong>, where you can change them anytime.</p>
+    </details>
+    <details>
+      <summary>Log drives automatically by working hours</summary>
+      <p>In <strong>Settings › Working hours</strong>, choose your work days and hours. Drives that start during those hours are logged as Work; everything else is logged as Personal. Each automatic choice sends a notification with a one-tap switch, and you can change any drive later.</p>
+    </details>
+    <details>
+      <summary>How is the mileage value calculated?</summary>
+      <p>Each Work drive is valued at the rate you choose — the IRS business rate for the drive’s date, or your own rate per mile — and rounded to the cent, then the drives are added up. Milemark estimates mileage value; it doesn’t give tax advice.</p>
+    </details>
+  </div>
+
+  <div class="card">
+    <h2>Reports</h2>
+    <details>
+      <summary>Creating and sending a report</summary>
+      <p>Open <strong>Reports</strong>, choose a month, year or custom range, and export a PDF or CSV. Use the share button to email it from your own Mail app. To send it automatically each month, see <strong>Settings › Automatic monthly email</strong>.</p>
+    </details>
+  </div>
+
+  <div class="card">
+    <h2>Your data</h2>
+    <details>
+      <summary>Where is my data stored?</summary>
+      <p>Only on your iPhone. Milemark has no account and no servers; the developer can’t see your drives. Details are in the <a href="privacy.html">Privacy Policy</a>.</p>
+    </details>
+    <details>
+      <summary>Backing up or moving to a new iPhone</summary>
+      <p>In <strong>Settings › Privacy &amp; data</strong>, tap <strong>Create encrypted backup</strong> to make a password-protected backup file, save it somewhere safe (for example Files), and use <strong>Restore from backup…</strong> on the new iPhone. Keep the password — it can’t be recovered.</p>
+    </details>
+    <details>
+      <summary>Deleting your data</summary>
+      <p>Delete individual drives from their detail screen, set old routes to delete automatically, or erase everything in <strong>Settings › Privacy &amp; data</strong>. Deleting the app also deletes its data.</p>
+    </details>
+  </div>
+
+  <footer>Milemark · <a href="privacy.html">Privacy Policy</a> · <a href="mailto:cowens321@icloud.com">cowens321@icloud.com</a></footer>
+</div>
+</body>
+</html>

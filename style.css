@@ -1,0 +1,37 @@
+:root {
+  --bg: #f5f6f8; --card: #ffffff; --text: #16181d; --muted: #5d6470; --line: #e3e6eb;
+  --accent: #1f5fd6; --accent-soft: #e8effc;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0e1013; --card: #181b20; --text: #eef0f3; --muted: #9aa2ae; --line: #2a2f37; --accent: #6ea0ff; --accent-soft: #1b2638; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header.site { display: flex; align-items: center; gap: 14px; margin-bottom: 28px; }
+header.site img { width: 56px; height: 56px; border-radius: 13px; }
+header.site a.brand { color: var(--text); text-decoration: none; font-weight: 700; font-size: 22px; }
+nav { margin-left: auto; display: flex; gap: 16px; font-size: 15px; }
+nav a { color: var(--muted); text-decoration: none; }
+nav a[aria-current="page"] { color: var(--accent); font-weight: 600; }
+h1 { font-size: 34px; line-height: 1.15; margin: 0 0 8px; letter-spacing: -0.02em; }
+h2 { font-size: 20px; margin: 32px 0 8px; }
+p, li { color: var(--text); }
+.lede { color: var(--muted); font-size: 19px; margin: 0 0 24px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 20px; margin: 16px 0; }
+.card h2 { margin-top: 0; }
+.contact { background: var(--accent-soft); border: none; }
+a { color: var(--accent); }
+details { border-top: 1px solid var(--line); padding: 14px 0; }
+details:first-of-type { border-top: none; }
+summary { cursor: pointer; font-weight: 600; list-style: none; }
+summary::-webkit-details-marker { display: none; }
+summary::before { content: "+"; display: inline-block; width: 1.2em; color: var(--accent); font-weight: 700; }
+details[open] summary::before { content: "–"; }
+details > :not(summary) { margin: 10px 0 0 1.2em; color: var(--muted); }
+ol { padding-left: 1.3em; }
+.muted { color: var(--muted); font-size: 15px; }
+footer { margin-top: 40px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 16px; }
+@media (max-width: 480px) { h1 { font-size: 28px; } nav { gap: 12px; } }
